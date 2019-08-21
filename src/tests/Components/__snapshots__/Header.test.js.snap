@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render header component 1`] = `
+<header>
+  <h1>
+    Expense App
+  </h1>
+  <div>
+    <NavLink
+      activeClassName="selected"
+      exact={true}
+      to="/"
+    >
+      DashBorad
+    </NavLink>
+  </div>
+  <div>
+    <NavLink
+      activeClassName="selected"
+      to="/addExpense"
+    >
+      Add Expense
+    </NavLink>
+  </div>
+</header>
+`;

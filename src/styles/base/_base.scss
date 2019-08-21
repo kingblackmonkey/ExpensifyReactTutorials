@@ -18,7 +18,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: $normal-size;
-    background: $offWhite;
+ 
   }
   
   code {
@@ -28,4 +28,9 @@ body {
 
   button, input{
     font-size: $normal-size !important;
+  }
+
+  .selected {
+    color:red;
+    font-weight: 700;
   }
