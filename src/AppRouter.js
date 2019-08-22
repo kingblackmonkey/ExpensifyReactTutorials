@@ -9,8 +9,7 @@ import {addExpenseGenerator, editExpenseGenerator} from './actions/expenses'
 import{filterTextGenerator} from './actions/filters'
 // ========================== redux 
 import initStore from './store/storeConfig'
-// import{ addExpenseGenerator} from './actions/expenses'
-// import getVisibleExpense from './visibleExpenses/visibleExpenses'
+
 
 // ==============react redux 
 import { Provider } from 'react-redux'
@@ -22,8 +21,7 @@ window.store = store;
 // add subscribe event listener
 store.subscribe(()=>{
     const state = store.getState();
-    console.log(state)
-// console.log( getVisibleExpense(state.expenses, state.filters));
+
 });
 
 
@@ -39,22 +37,6 @@ store.dispatch(addExpenseGenerator(
    
     )
 );
-
-// store.dispatch(editExpenseGenerator({id: "6273c927-697f-4267-9f42-390fcd4c282d",description: 'dog', amount : 12345}))
-// store.dispatch(addExpenseGenerator(
-    
-//     {
-//         description: 'gas bill',
-//         amount: 70000,
-//         timePayAt: 300 
-//     }
-
-// )
-// );
-
-  // store.dispatch( filterTextGenerator({text: 'G'}));
-
-  console.log('yooo')
 
  
 
